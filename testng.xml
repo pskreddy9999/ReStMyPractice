@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Regression" ><!-- parallel="tests"-->
+  <test thread-count="5" name="TestValidate">
+    <classes>
+      <class name="Test.TestRestApis">
+      <methods>
+         <include name="testApis"/>
+         <include name="testApi"/>
+      </methods>       
+      </class>    
+    </classes>
+  </test> <!-- Test -->
+  
+ <!-- <test thread-count="5" name="TestValidate2">
+     <classes>
+      <class name="Test.TestRestApis">
+      <methods>
+         <include name="testApi"/>
+      </methods>       
+      </class>    
+    </classes>
+  </test>  Test -->
+</suite> <!-- Suite -->
